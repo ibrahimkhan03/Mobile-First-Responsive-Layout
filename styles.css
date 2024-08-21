@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background-image: url('https://i.postimg.cc/3RczrxqC/davide-foti-CX4-Ev-CCvg0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    height: 70vh; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.text-section {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+/* Mobile-first styles */
+@media (min-width: 600px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .buttons button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 900px) {
+    .hero-section {
+        padding: 100px 50px;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+    .buttons button {
+        font-size: 1.2rem;
+    }
+
+    .text-section {
+        padding: 40px;
+    }
+}
